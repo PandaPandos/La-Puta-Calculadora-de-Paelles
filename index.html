@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA PUTA CALCULADORA DE PAELLES</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Rice Against the Machine Logo" class="logo">
+    <h1>LA PUTA CALCULADORA DE PAELLES</h1>
+  </header>
+
+  <div class="container">
+    <label>Tipus de preparació:
+      <select id="modo" onchange="actualitzarReferencia()">
+        <option value="fina">Capa fina</option>
+        <option value="paella">Paella normal</option>
+      </select>
+    </label>
+
+    <label>Diàmetre superior (cm):
+      <input type="number" id="diamSuperior" value="35" step="0.1">
+    </label>
+
+    <label>Diàmetre inferior (cm):
+      <input type="number" id="diamInferior" value="29.5" step="0.1">
+    </label>
+
+    <label>Quantitat d'arròs (g):
+      <input type="number" id="arroz" value="0" readonly>
+    </label>
+
+    <label>Caldo total (g):
+      <input type="number" id="caldoTotal" value="0" readonly>
+    </label>
+
+    <button onclick="calcular()">Calcula els valors</button>
+    <div id="frase" class="frase"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

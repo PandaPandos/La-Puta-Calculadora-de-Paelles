@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #111;
+  font-family: 'Courier New', Courier, monospace;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  
+  width: 280px;
+  max-width: 90%;
+  margin-bottom: 20px;
+
+  
+  background-color: #111;
+
+}
+
+h1 {
+  font-size: 2.6rem;
+  color: #ff0040;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000;
+  letter-spacing: 2px;
+}
+
+.container {
+  background-color: #1a1a1a;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 0, 64, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+input, select {
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  background: #333;
+  color: #fff;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #ff0040;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e60036;
+}
+
+.frase {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff0040;
+  min-height: 1.5em;   /* evita saltets quan no n’hi ha cap */
+}
